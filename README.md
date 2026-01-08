@@ -1,16 +1,32 @@
-MoonSharp       [![Build Status](https://travis-ci.org/xanathar/moonsharp.svg?branch=master)](https://travis-ci.org/xanathar/moonsharp) [![Build Status](https://img.shields.io/nuget/v/MoonSharp.svg)](https://www.nuget.org/packages/MoonSharp/)
-=========
-http://www.moonsharp.org   
+<h1 align="left">
+  MoonSharp
+  <a href="https://www.nuget.org/packages/MoonSharp/"><img src="https://img.shields.io/nuget/v/MoonSharp.svg?style=for-the-badge&logo=nuget&color=004880" alt="NuGet Version" /></a>
+  <a href="https://www.nuget.org/packages/MoonSharp/"><img src="https://img.shields.io/nuget/dt/MoonSharp.svg?style=for-the-badge&logo=nuget&color=004880" alt="NuGet Downloads" /></a>
+</h1>
 
+<p align="left">
+  A Lua interpreter written entirely in C#
+</p>
 
+---
+
+### [License](LICENSE.md)
+### [Website](https://www.moonsharp.org)
+### [Getting Started](https://www.moonsharp.org/getting_started.html)
+
+---
 
 A complete Lua solution written entirely in C# for the .NET, Mono, Xamarin and Unity3D platforms.
 
-Features:
+For highlights on differences between MoonSharp and standard Lua, see https://www.moonsharp.org/moonluadifferences.html
+
+Please see https://www.moonsharp.org for downloads, infos, tutorials, documentation, etc.
+
+## Features
 * 99% compatible with Lua 5.2 (with the only unsupported feature being weak tables support) 
 * Support for metalua style anonymous functions (lambda-style)
 * Easy to use API
-* **Debugger** support for Visual Studio Code (PCL targets not supported)
+* Debugger support for Visual Studio Code (PCL targets not supported)
 * Remote debugger accessible with a web browser and Flash (PCL targets not supported)
 * Runs on .NET 3.5, .NET 4.x, .NET Core, Mono, Xamarin and Unity3D
 * Runs on Ahead-of-time platforms like iOS
@@ -27,26 +43,13 @@ Features:
 * Easy to use error handling (script errors are exceptions)
 * Support for coroutines, including invocation of coroutines as C# iterators 
 * REPL interpreter, plus facilities to easily implement your own REPL in few lines of code
-* Complete XML help, and walkthroughs on http://www.moonsharp.org
+* Complete XML help, and walkthroughs on https://www.moonsharp.org
 
-For highlights on differences between MoonSharp and standard Lua, see http://www.moonsharp.org/moonluadifferences.html
-
-Please see http://www.moonsharp.org for downloads, infos, tutorials, etc.
-
-
-**License**
-
-The program and libraries are released under a 3-clause BSD license - see the license section.
-
-Parts of the string library are based on the KopiLua project (https://github.com/NLua/KopiLua).
-Debugger icons are from the Eclipse project (https://www.eclipse.org/).
-
-
-**Usage**
+## Usage
 
 Use of the library is easy as:
 
-```C#
+```csharp
 double MoonSharpFactorial()
 {
 	string script = @"    
@@ -65,13 +68,5 @@ double MoonSharpFactorial()
 	return res.Number;
 }
 ```
-
-For more in-depth tutorials, samples, etc. please refer to http://www.moonsharp.org/getting_started.html
-
-
-
-
-
-
 
 
