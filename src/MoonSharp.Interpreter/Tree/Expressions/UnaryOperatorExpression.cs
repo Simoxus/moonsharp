@@ -67,7 +67,7 @@ namespace MoonSharp.Interpreter.Tree.Expressions
 
 						if (d.HasValue)
 						{
-							uint ud = (uint)Math.IEEERemainder(d.Value, Math.Pow(2.0, 32.0));
+							uint ud = (uint)System.Math.IEEERemainder(d.Value, System.Math.Pow(2.0, 32.0));
 							return DynValue.NewNumber(~ud);
 						}
 

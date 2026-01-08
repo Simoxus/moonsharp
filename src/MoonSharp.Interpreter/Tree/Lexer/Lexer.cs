@@ -154,7 +154,7 @@ namespace MoonSharp.Interpreter.Tree
 			{
 				case '|':
 					CursorCharNext();
-					return CreateToken(TokenType.Lambda, fromLine, fromCol, "|");
+					return CreateToken(TokenType.Op_BitwiseOr_Or_Lambda, fromLine, fromCol, "|");
 				case ';':
 					CursorCharNext();
 					return CreateToken(TokenType.SemiColon, fromLine, fromCol, ";");
